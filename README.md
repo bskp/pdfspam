@@ -24,5 +24,6 @@ Feel free to use & modify!
 
 TODO
 ----
+- Ability to recover!!!
 - Check and help for not-installed third party tools
 - Core estimation with multiprocessing.cpu_count(), do the whole multiprocessor stuff

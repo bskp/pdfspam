@@ -48,6 +48,7 @@ def run(fin, fout=None, v=False, no_cleanup=False):
     print 'Splitting up pdf to individual pages...'
 
     
+    # whole-pdf conversion crashes with large files. we thus do it one by one.
     idx = 0
     while not _do(cmd['pdf2png'].format(cache=cache, fin=fin, idx=idx),v):
         sys.stdout.write('..')
@@ -67,6 +68,7 @@ def run(fin, fout=None, v=False, no_cleanup=False):
         sys.stdout.write('.')
         sys.stdout.flush()
     
+    pages.sort(key=int)  # otherwise the list would be sorted in a string-way
     pagelist = ' '.join([p+'.pdf' for p in pages])
     _do(cmd['join_pdf'].format(cache=cache, fout=fout, pages=pagelist),v)
 
