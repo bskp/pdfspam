@@ -7,7 +7,7 @@ A very basic re-implementation of _[pdfsandwich][1]_ in Python, since
 - All the tool invocations were nicely logged in verbose mode
 - Python was the easiest way to reach my goal
 
-From Tobias Elze's [website][1]:
+What does it do? From Tobias Elze's [website][1]:
 
 [1]: http://www.tobias-elze.de/pdfsandwich/
 
@@ -22,8 +22,3 @@ From Tobias Elze's [website][1]:
 
 Feel free to use & modify!
 
-TODO
-----
-- Ability to recover!!!
-- Check and help for not-installed third party tools
-- Core estimation with multiprocessing.cpu_count(), do the whole multiprocessor stuff
